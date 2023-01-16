@@ -1,0 +1,41 @@
+html, body{
+    height: 95%;
+}
+
+.scene{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(3, 88, 3);
+    display: flex;
+    flex-direction: row;
+}
+
+.left-field{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(3, 88, 3);
+    border-right: 10px solid black;
+    border: 3px solid black;
+}
+.right-field{
+    width: 50%;
+    height: 100%;
+    background-color: rgb(3, 88, 3);
+    border-left: 10px solid black;
+    border: 3px solid black;
+}
+
+.left-paddle{
+    position: absolute;
+    height: 16%;
+    width: 5%;
+    background-color: black;
+    
+}
+.right-paddle{
+    position: absolute;
+    height: 16%;
+    width: 5%;
+    background-color: black;
+    
+}
