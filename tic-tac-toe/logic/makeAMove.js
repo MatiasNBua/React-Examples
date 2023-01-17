@@ -15,10 +15,10 @@ function makeAMove(index, state) {
         || checkLine(board, 2, 5, 8)
         || checkLine(board, 0, 4, 8)
         || checkLine(board, 2, 4, 6)) 
-        result= player
+        result = player
         else if (checkDraw(board))
         result ='xo'
-        player = player=== 'x'?'o':'x'
+        player = player === 'x'?'o':'x'
         return { player , board , result }
       
 }
