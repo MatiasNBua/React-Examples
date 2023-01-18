@@ -1,21 +1,43 @@
 * {
     box-sizing: border-box;
-}
-
-html,
-body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  html,
+  body {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 65%;
     margin: 0;
-    height: 100%;
-}
-
-.form {
+  }
+  
+  .form {
+    background-color: rgb(105, 105, 105);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 16px;
-
-}
-
-.wordShown {
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 8px;
+  }
+  
+  .wordShown {
     letter-spacing: 16px;
-}
+  }
+  
+  .container {
+    width: 80vh;
+    height: 35vh;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,0.8631827731092436) 0%, rgba(65,147,148,0.8715861344537815) 48%, rgba(131,131,131,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 16px;
+    padding: 16px;
+    margin: 0px;
+  }
