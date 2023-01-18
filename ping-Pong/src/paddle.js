@@ -9,7 +9,7 @@ class Paddle {
     }
   
     render = () => {
-      ctx.fillStyle = "#FF0000";
+      ctx.fillStyle = "#2C7EAE";
       ctx.fillRect(this.x, this.y, config.paddleWidth, config.paddleHeight);
       ctx.font = "30px Arial";
       ctx.fillText(this.score, canvas.width / 2 + 200 * this.direction, 50);

@@ -21,8 +21,6 @@ rightPaddle.style.left = (pitchWidth - paddleWidth - 10) + 'px'
 
 document.onkeydown = function(event) {
     // left paddle
-
-
     if (event.key === 's' && leftPaddle.y <= pitchHeight - paddleHeight) {
         leftPaddle.y = leftPaddle.y + 10
 

@@ -1,17 +1,15 @@
-console.log("hello world");
-
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 
 const config = {
-  canvasWidth: 800,
-  canvasHeight: 500,
-  paddleWidth: 10,
-  paddleHeight: 80,
-  paddleSpeed: 8, /*8*/
-  ballXSpeed: 4,    /*9*/
-  ballYSpeed: 2,    /*3*/
-  ballSlice: 4, /*4*/
+  canvasWidth: 1200,
+  canvasHeight: 550,
+  paddleWidth: 15,
+  paddleHeight: 120,
+  paddleSpeed: 5, /*8*/
+  ballXSpeed: 3,    /* <--- Velocidad de la pelota en el eje X*/
+  ballYSpeed: 1,    /* <--- Velocidad de la pelota en el eje Y*/
+  ballSlice: 6, /*4*/
 };
 
 canvas.width = config.canvasWidth;
@@ -103,10 +101,10 @@ const win = (paddle) => {
 const paintBall = () => {
   ctx.beginPath();
   ctx.arc(ball.x, ball.y, ball.r, 0, 2 * Math.PI, false);
-  ctx.fillStyle = "green";
+  ctx.fillStyle = "black";
   ctx.fill();
   ctx.lineWidth = 5;
-  ctx.strokeStyle = "#003300";
+  ctx.strokeStyle = "#01110";
   ctx.stroke();
 };
 
